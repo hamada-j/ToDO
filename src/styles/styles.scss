@@ -1,14 +1,9 @@
-@import
-'base',
-'~minx/src/reset',
-'~minx/src/elements',
-'grid';
-
+@import "base", "~minx/src/reset", "~minx/src/elements", "grid";
 
 [hidden] {
   display: none !important;
 }
 
 ::selection {
-  background: rgba(200,200,255,.1);
+  background: rgba(200, 200, 255, 0.1);
 }

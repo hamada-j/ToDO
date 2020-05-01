@@ -1,8 +1,4 @@
-@import
-"~minx/src/settings",
-"~minx/src/functions",
-"~minx/src/mixins";
-
+@import "~minx/src/settings", "~minx/src/functions", "~minx/src/mixins";
 
 .header {
   padding: 10px 0;
@@ -11,23 +7,21 @@
   line-height: 40px;
 }
 
-
 .header__title {
-  @include fa-icon(circle-o);
+  @include fa-icon(fire);
   float: left;
-  font-size: rem(14px);
+  font-size: rem(18px);
   font-weight: 400;
   text-rendering: auto;
-  transform: translate(0,0);
+  transform: translate(0, 0);
 
   &:before {
     padding-right: 5px;
-    color: #fff;
-    font-family: 'FontAwesome';
+    color: rgb(112, 111, 111);
+    font-family: "FontAwesome";
     line-height: 20px;
   }
 }
-
 
 .header__links {
   @include clearfix;
@@ -51,23 +45,26 @@
   }
 }
 
-
 .header__link {
   display: block;
   color: inherit;
   font-size: rem(14px);
   text-decoration: none;
   text-rendering: auto;
-  transform: translate(0,0);
+  transform: translate(0, 0);
 }
-
 
 .header__link--github {
   @include fa-icon(github);
   font-size: rem(24px);
 
   &:before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     line-height: 24px;
   }
+}
+
+.hi {
+  width: 10px;
+  height: 10px;
 }
