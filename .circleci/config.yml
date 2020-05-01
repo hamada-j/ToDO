@@ -1,17 +1,17 @@
-version: 2.1
-orbs:
-  node: circleci/node@1.1.6
-jobs:
-  build-and-test:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+machine:
+  node:
+    version: 8.1
+
+dependencies:
+  pre:
+    - rm -rf node_modules
+
+test:
+  override:
+    - npm run build
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN
