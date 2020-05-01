@@ -1,89 +1,98 @@
-[![CircleCI](https://circleci.com/gh/r-park/todo-angular-firebase.svg?style=shield&circle-token=d1a31de32e5baabbf59aa8f78ba251254261fb3a)](https://circleci.com/gh/r-park/todo-angular-firebase)
+# Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
 
+Here is a fine To DO app built with **Angular v9** framework and backend in **Firebase** with **OAuth** authentication and database.
 
-# Todo app with Angular, AngularFire2, and Firebase
-A simple Todo app example built with **Angular**, **Angular CLI** and **AngularFire2**. The app features a **Firebase** backend with **OAuth** authentication. Try the demo at <a href="https://ng2-todo-app.firebaseapp.com" target="_blank">ng2-todo-app.firebaseapp.com</a>.
+## Demo
 
+Try the demo at <a href="https://todo-in-fire.web.app/" target="_blank">https://todo-in-fire.web.app/</a>.
 
-Stack
------
+## Stack FAN (Firebase Angular NodeJS)
 
-- Angular 4
-- Angular CLI
-- AngularFire2 `4.0.0-rc.1`
+- Angular 9, CLI, AngularFire2
 - Firebase
 - RxJS
 - SASS
 - Typescript
 
-
-Quick Start
------------
-
-#### Install Angular CLI
+#### Clone the app
 
 ```shell
-$ npm install -g @angular/cli
+$ git clone https://github.com/hamada-j/ToDO.git
 ```
 
-#### Clone the app, install package dependencies, and start the dev server @ `localhost:4200`
+#### Install package dependencies,
 
 ```shell
-$ git clone https://github.com/r-park/todo-angular-firebase.git
-$ cd todo-angular-firebase
+$ cd ToDO
 $ npm install
+```
+
+#### Start the dev server in `localhost:4200`
+
+```shell
 $ npm start
 ```
 
+## Deploy to Firebase
 
-## Deploying to Firebase
 #### Prerequisites
+
 - Create a free Firebase account at https://firebase.google.com
 - Create a project from your [Firebase account console](https://console.firebase.google.com)
-- Configure the authentication providers for your Firebase project from your Firebase account console
+- Enable authentication providers for your Firebase project.
+- Create a Database in Firebase project.
 
-#### Configure this app with your project-specific details
+#### Configure
 
 Edit `.firebaserc` in the project root:
 
 ```json
 {
   "projects": {
-    "default": "your-project-id"
+    "default": "id_of_your_project"
   }
 }
 ```
 
-Edit the firebase configuration in `src/environments/firebase.ts`
+Edit the firebase configuration in `src/environments` with specific info from Firebase
 
 ```typescript
-export const firebaseConfig = {
-  apiKey: 'your api key',
-  authDomain: 'your-project-id.firebaseapp.com',
-  databaseURL: 'https://your-project-id.firebaseio.com',
-  storageBucket: 'your-project-id.appspot.com'
+export const environment = {
+  production: true,
+  firebase: {
+    apiKey: "XXXXXXXX",
+    authDomain: "todo-in-fire.XXXXX.com",
+    databaseURL: "https://todo-in-fire.XXXX.com",
+    projectId: "todo-in-fire",
+    storageBucket: "todo-in-fire.XXXX.com",
+    messagingSenderId: "XXXX",
+    appId: "XXXXX",
+    measurementId: "XXXXX",
+  },
 };
 ```
 
 #### Install firebase-tools
+
 ```shell
 $ npm install -g firebase-tools
 ```
 
 #### Build and deploy the app
+
 ```shell
 $ npm run build
 $ firebase login
-$ firebase use default
+$ firebase init
+$ --->select hosting<---
+$ --->dist<---
+$ No ---> single page
+$ No ---> overwrite index.html
 $ firebase deploy
 ```
 
+## Commands
 
-Commands
---------
-
-|Script|Description|
-|---|---|
 |`npm start`|Start development server @ `localhost:4200`|
 |`npm run build`|build the application to `./dist`|
 |`npm run lint`|Lint `.ts` files|
