@@ -1,4 +1,4 @@
-![](images/app.png)
+![alt text](images/app.png)
 
 # Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
 
@@ -7,12 +7,12 @@ Here is a fine To DO app built with
 **Firebase**
 with
 **OAuth**authentication and database.
-![](images/auth.png)
-![](images/login.png).
+![alt text](images/auth.png)
+![alt text](images/login.png).
 
 ## Demo
 
-![](images/todo.png)
+![alt text](images/todo.png)
 Try the demo at <a href="https://todo-in-fire.web.app/" target="_blank">https://todo-in-fire.web.app/</a>.
 
 ## Stack FAN (Firebase Angular NodeJS)
@@ -44,7 +44,7 @@ $ npm start
 
 ## Deploy to Firebase
 
-![](images/db.png)
+![alt text](images/db.png)
 
 #### Prerequisites
 
