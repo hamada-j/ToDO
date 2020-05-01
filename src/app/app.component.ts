@@ -1,32 +1,20 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
+import { AuthService } from './auth';
+
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  styleUrls: ['./app.component.scss'],
+  template: `
+    <app-header
+      [authenticated]="auth.authenticated$ | async"
+      (signOut)="auth.signOut()"></app-header>
+
+    <main class="main">
+      <router-outlet></router-outlet>
+    </main>
+  `
 })
 export class AppComponent {
-  arrTarea: any[];
-
-  constructor() {
-    this.arrTarea = new Array();
-  }
-  /**
-   * ------------------------------------------------------------------------
-   *                   Crear Tarea -----> arrTareas
-   * ------------------------------------------------------------------------
-   */
-
-  manejarTareaEnviada($event) {
-    // let nuevatarea = {
-    //   titulo: $event.titulo,
-    //   texto: $event.texto
-    // };
-    // this.arrTarea.push(nuevatarea);
-    // SpletOperator pasa todas las propiedades y sus valores
-    const nuevaTarea = { ...$event };
-
-    this.arrTarea.push(nuevaTarea);
-    console.log(this.arrTarea);
-  }
+  constructor(public auth: AuthService) {}
 }
