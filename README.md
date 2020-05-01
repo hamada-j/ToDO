@@ -1,4 +1,4 @@
-![alt text](images/app.png)
+![alt text](/images/app.png)
 
 # Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
 
