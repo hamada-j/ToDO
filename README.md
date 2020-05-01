@@ -8,7 +8,7 @@ Here is a fine To DO app built with
 with
 **OAuth**authentication and database.
 ![](images/auth.png)
-![](images/login.png)
+![](images/login.png).
 
 ## Demo
 
