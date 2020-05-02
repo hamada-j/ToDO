@@ -1,4 +1,4 @@
-![ScreenShot](https://github.com/hamada-j/ToDO/images/app.png)
+![ScreenShot](https://github.com/hamada-j/ToDO/tree/feeature_dev/Images/app.png)
 <img align="left" src="./images/app.png" width=200 >
 
 # Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
