@@ -1,4 +1,5 @@
 ![ScreenShot](./images/app.png)
+<img align="left" src="./images/app.png" width=200 >
 
 # Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
 
