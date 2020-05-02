@@ -14,8 +14,6 @@ import {
     <header class="header">
       <div class="g-row">
         <div class="g-col">
-          <h1 class="header__title">Todo Angular Firebase</h1>
-
           <ul class="header__links">
             <li *ngIf="authenticated">
               <a class="header__link" (click)="signOut.emit()" href="#"
@@ -29,6 +27,8 @@ import {
               ></a>
             </li>
           </ul>
+
+          <h1 class="header__title">Todo-in-Fire</h1>
         </div>
       </div>
     </header>

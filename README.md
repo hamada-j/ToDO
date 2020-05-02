@@ -1,9 +1,19 @@
-# Todo-in-Fire app with Angular, Angular-Material, AngularFire2, and Firebase.
+# Todo-in-Fire
 
-Here is a fine To DO app built with **Angular v9** framework and backend in **Firebase** with **OAuth** authentication and database.
+![ScreenShot](https://github.com/hamada-j/ToDO/blob/feeature_dev/Images/app.png)
+
+# App with Angular, Angular-Material, AngularFire2, and Firebase.
+
+Here is a fine To DO app built with
+**Angular v9** framework and backend in
+**Firebase**
+with
+**OAuth**authentication and database.
+| ![ScreenShot](https://github.com/hamada-j/ToDO/blob/feeature_dev/Images/auth.png)| ![ScreenShot](https://github.com/hamada-j/ToDO/blob/feeature_dev/Images/login.png)|
 
 ## Demo
 
+![ScreenShot](https://github.com/hamada-j/ToDO/blob/feeature_dev/Images/todo.png)
 Try the demo at <a href="https://todo-in-fire.web.app/" target="_blank">https://todo-in-fire.web.app/</a>.
 
 ## Stack FAN (Firebase Angular NodeJS)
@@ -34,6 +44,8 @@ $ npm start
 ```
 
 ## Deploy to Firebase
+
+![ScreenShot](https://github.com/hamada-j/ToDO/blob/feeature_dev/Images/db.png)
 
 #### Prerequisites
 
