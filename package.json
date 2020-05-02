@@ -5,7 +5,7 @@
   "homepage": "https://todo-in-fire.web.app/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/hamada-j/ToDO/"
   },
   "license": "MIT",
   "private": true,
@@ -69,29 +69,7 @@
     "typescript": "^2.4.1"
   },
   "author": {
-    "name": "Richard Park",
-    "email": "objectiv@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "Cody Lundquist",
-      "email": "cody.lundquist@gmail.com"
-    },
-    {
-      "name": "Jason Shultz",
-      "email": ""
-    },
-    {
-      "name": "Luke Schlangen",
-      "email": "luke@lukeschlangen.com"
-    },
-    {
-      "name": "Sinan Bolel",
-      "email": "sinanbolel@gmail.com"
-    },
-    {
-      "name": "Yannick Koehler",
-      "email": "yannick@koehler.name"
-    }
-  ]
+    "name": "Hamada",
+    "email": "defjamvk@gmail.com"
+  }
 }
