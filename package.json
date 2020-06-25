@@ -5,7 +5,9 @@
   "homepage": "https://todo-in-fire.web.app/",
   "repository": {
     "type": "git",
+
     "url": "https://github.com/hamada-j/ToDO.git"
+
   },
   "license": "MIT",
   "private": true,
