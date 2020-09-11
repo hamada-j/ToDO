@@ -108,3 +108,4 @@ $ firebase deploy
 |`npm start`|Start development server @ `localhost:4200`|
 |`npm run build`|build the application to `./dist`|
 |`npm run lint`|Lint `.ts` files|
+------
